@@ -1,0 +1,32 @@
+#blog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container_blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right_content {
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.img_box {
+  width: 40vw;
+}
+
+img {
+  max-width: 80%;
+  border-radius: 10vw;
+}

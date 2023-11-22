@@ -1,0 +1,69 @@
+
+/* 모든 html 요소에 대한 스타일 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #161616;
+  --color-white: #ffffff;
+  --color-primary: #1c69ff;
+  --color-primary-variant: #87cefa;
+  --color-light: #6d6d6d;
+
+  --container-width-lg: 75%;        /* 대형 컨테이너 너비 변수 */
+  --container-width-md: 85%;        /* 중형 컨테이너 너비 변수 */
+  --container-width-sm: 93%;        /* 중소형 컨테이너 너비 변수 */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg);
+  color: var(--color-white);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url(../public/assets/background2.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;  /* 스크롤 동작 부드럽게 만들기 */
+}
+
+::-webkit-scrollbar {
+  display: none;  /* 웹킷 기반 브라우저에서 스크롤바를 숨기기 위한 설정 */
+}
+
+/* ============== MEDIA QUEIRES (MEDIUM DEVICES) ================== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/* ============== MEDIA QUEIRES (SMALL DEVICES) ================== */
+@media screen and (max-width: 620px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+}
