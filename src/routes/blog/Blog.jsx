@@ -1,5 +1,6 @@
 import React from 'react'
-import './blog.css'
+
+import img1 from '../../assets/img/react_blog.png'
 import Navbar from '../../components/Navbar'
 
 const Blog = () => {
@@ -13,25 +14,25 @@ const Blog = () => {
         </div>
         <div className='right_content'>
           <div className='blog_content'>
-            <div className='img_box'><img src='/assets/react_blog1.png'/></div>
+            <div className='img_box'><img src={img1}/></div>
             <div>제목</div>
             <div>내용</div>
           </div>
           <div className='blog_content'>
-            <div className='img_box'><img src='/assets/react_blog1.png'/></div>
+            <div className='img_box'><img src={img1}/></div>
             <div>제목</div>
             <div>내용</div>
           </div>
           <div className='blog_content'>
-            <div className='img_box'><img src='/assets/react_blog1.png'/></div>
+            <div className='img_box'><img src={img1}/></div>
             <div>제목</div>
             <div>내용</div>
           </div>
           <div className='blog_content'>
-            <div className='img_box'><img src='/assets/react_blog1.png'/></div>
+            <div className='img_box'><img src={img1}/></div>
             <div>제목</div>
             <div>내용</div>
-          </div>
+          </div>          
         </div>
       </div>
     </section>
