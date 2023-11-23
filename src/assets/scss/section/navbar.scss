@@ -1,0 +1,38 @@
+#navbar {
+  @include position-fixed;
+  @include flex-center;
+  height: 120px;
+  overflow: hidden;
+  
+  h1 {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    font-size: 2.5vw;
+    color: var(--color-white);
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 4.5rem;
+
+    li {
+      display: flex;
+      padding: 0 1rem;
+    }
+
+    a {
+      font-size: 1.5vw;
+      font-weight: 500;
+      color: var(--color-white);
+    }
+  }
+
+  @media (max-width: 620px) {
+  
+  }
+
+  @media (max-width: 1024px) {
+
+  }
+}

@@ -1,0 +1,36 @@
+#blog {
+  @include flex-center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+
+  .container_blog {
+    @include flex-center;
+    flex-direction: column;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .left_content{
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+  }
+
+  .right_content {
+    margin-top: 30%;
+  }
+  
+  .img_box {
+    width: 40vw;
+    padding: 30px;
+  }
+  
+  img {
+    max-width: 80%;
+    border-radius: 10vw;
+  }
+}
+
